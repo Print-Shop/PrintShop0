@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu styling</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('images/pattern1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            margin: 0;
+        }
+
+        /* navbar */
+        .navbar {
+            list-style: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            background: black;
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: right;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            /* remove underline */
+            padding: 15px 20px;
+            margin: 5px 0px;
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(255, 94, 0);
+            color: #f4f4f4;
+        }
+
+        .navbar #logo{
+            display: block;
+            background-color: rgb(255, 94, 0);
+            color: #f4f4f4;
+            margin: 5px;
+            margin-left: 45px;
+            padding-left: 10px;
+            padding-right: 10px;
+            float: left;
+        }
+        .navbar #logo a{
+            padding: 0;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div button{
+            background-color: rgb(255, 136, 0);
+        }
+
+        /* side menu bar */
+        .bot-menu {
+            list-style:none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            background: black;
+            overflow: auto;
+        }
+
+        .bot-menu li {
+            float: left;
+
+        }
+
+        .bot-menu li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            /* remove underline */
+            padding: 15px 20px;
+            border: 0;
+            margin: 5px 0px;
+        }
+
+        .bot-menu li a:hover {
+            background-color: rgb(255, 94, 0);
+            color: #f4f4f4;
+        }
+
+        .bot-menu #logo{
+            display: block;
+            background-color: rgb(255, 94, 0);
+            color: #f4f4f4;
+            margin: 10px 190px;
+            padding: 10px 30px;
+        }
+
+        .card {
+            border: 5px solid black;
+            background:rgb(255, 94, 0);
+            padding: 20px;
+            margin: 50px;
+        }
+
+        .button1{
+            border-radius: 10px;
+            background-color: black;
+            color: rgb(180, 176, 176);
+        }
+ 
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Home</a></li>
+        <li id="logo" id="logo2"><a href="images/PrintShopLogo.png" target="images"><img src="images/PrintShopLogo.png" alt="Logo" height=" 50px" width=" 50px"></a></li>
+    </ul>
+    <br>
+
+    <div>
+        <img src="images/tshirt.jpg" alt="T-shirt" style="width:fit-content; height:fit-content;">
+    </div>
+    <br>
+
+    <div class="card">
+        <h2>Get all of your favourite shirts here!</h2>
+        <p>We have a wide selection of products to choose from. If you can imagine it, we can make it!</p>
+        <button type="button" class="button1">Get more information</button>
+    </div>
+
+    <div class="card">
+        <h2>Do you have other great ideas?</h2>
+        <p>If you have other great designs you want to see sold here, let us know. 
+            we will make any design of your dreams!</p>
+            <button type="button" class="button1">Get more information</button>
+    </div>
+
+<footer>
+    <ul class="bot-menu">
+        <li id="logo"><img src="images/PrintShopLogo.png" alt="Logo" height=" 50px" width=" 50px"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</footer>
+</body>
+</html>
